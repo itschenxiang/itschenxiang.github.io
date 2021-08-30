@@ -37,11 +37,8 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 # Welcome to itschenxiang's Pages
 * email: itschenxiang@163.com
 
-## 主题
+## Topics
+* [Spring开发常见错误](./topics/spring_error/spring_error01.md)
 
-[Spring开发常见错误](./topics/spring_error/spring_error01.md)
-
-#### Spring相关
-
+## Tutorial
 * [Spring Data JPA入门](./topics/tutorial/springdatajpa.md)
-
