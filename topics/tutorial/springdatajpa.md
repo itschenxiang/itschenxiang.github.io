@@ -161,3 +161,14 @@ List<Customer> findEqualFirstNameAndLastName();
 ```
 
 #### @Query参数
+* 按照参数顺序：`?1`, `?2`, ...,`?n`
+* 命名参数：`:firstname`, 'lastname'
+
+```java
+    @Query("select c from Customer c where c.firstName=?1 and c.lastName=?2")
+    List<Customer> myFindByName(String firstName,String lastName);
+
+    // 这里刻意参数"firstName"与SQL Param "firstname"不一致
+    @Query("select c from Customer c where c.firstName=:firstname and c.lastName=:lastname")
+    List<Customer> myFindByName2(@Param("firstname")String firstName,@Param("lastname")String lastName);
+```
