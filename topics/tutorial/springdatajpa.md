@@ -159,3 +159,5 @@ class CustomerRepositoryTest {
 @Query("select c from Customer c where c.firstName = c.lastName")
 List<Customer> findEqualFirstNameAndLastName();
 ```
+
+#### @Query参数
