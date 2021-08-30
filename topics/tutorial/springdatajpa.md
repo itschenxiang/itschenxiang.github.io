@@ -151,4 +151,11 @@ class CustomerRepositoryTest {
 * [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa/)
 
 ## 更多相关特性
+> 更多的特性也基于前面的示例。
+
 #### @Query
+在`CustomerRepository`中声明如下方法：
+```java
+@Query("select c from Customer c where c.firstName = c.lastName")
+List<Customer> findEqualFirstNameAndLastName();
+```
