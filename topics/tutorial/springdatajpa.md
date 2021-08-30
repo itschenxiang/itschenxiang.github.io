@@ -172,3 +172,11 @@ List<Customer> findEqualFirstNameAndLastName();
     @Query("select c from Customer c where c.firstName=:firstname and c.lastName=:lastname")
     List<Customer> myFindByName2(@Param("firstname")String firstName,@Param("lastname")String lastName);
 ```
+#### @Modify
+对于数据更新与删除操作，需要在`@Query`之上添加`@Modify`，因为`@Query`无法执行DML。如果没有`Modify`可能会有如下类似的异常：
+```
+QueryExecutionRequestException: Not supported for DML operations ...
+```
+除此之外，UPDATE和DELETE操作需要放在事务中，否则会报错。
+
+#### 一对一、一对多、多对多
