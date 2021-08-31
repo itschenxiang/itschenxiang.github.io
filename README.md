@@ -1,7 +1,7 @@
-# Welcome to itschenxiang's Pages
-* email: itschenxiang@163.com
+# Itschenxiang
 
-## [Spring系列](./docs/spring/README.md)
+# 主题
+## [Spring编程常见错误](./docs/springsummary/README.md)
 
-## Tutorial
+## 教程
 * [Spring Data JPA入门](./docs/tutorial/springdatajpa.md)
