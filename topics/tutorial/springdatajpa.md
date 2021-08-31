@@ -177,6 +177,6 @@ List<Customer> findEqualFirstNameAndLastName();
 ```
 QueryExecutionRequestException: Not supported for DML operations ...
 ```
-除此之外，UPDATE和DELETE操作需要放在事务中，否则会报错。
+除此之外，在Spring Data JPA中UPDATE和DELETE操作需要放在事务中，否则会报错。
 
 #### 一对一、一对多、多对多
