@@ -3,6 +3,7 @@
 
 # 主题
 ## [Spring编程常见错误](./docs/springsummary/README.md)
+## [Linux常用命令(CentOS)](./docs/linux/commands.md)
 
 ## 教程
 * [Spring Data JPA入门](./docs/tutorial/springdatajpa.md)
