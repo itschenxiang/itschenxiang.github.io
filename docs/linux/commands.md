@@ -43,3 +43,13 @@ tail -n 100 [filename] 后100行
 tail -n +100 [filename] 100行及之后的所有内容
 tail -f [filename] 数据实时显示到屏幕
 ```
+
+## 管道
+#### grep
+```shell
+grep
+-n 显示行号
+-c 计数
+-i 忽略大小写
+-v 反选，表示返回不包含指定字符串的行
+```
