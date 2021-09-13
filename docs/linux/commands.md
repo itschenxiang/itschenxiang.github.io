@@ -14,7 +14,7 @@ q 退出
 space 下一页
 enter 下一行
 /STRING 向下查找字符串
-b 往回翻页，只对文件有用，管道无用
+b 往回翻页，只对文件有用，对管道无用
 ```
 
 #### less
@@ -30,4 +30,15 @@ pageup 上一页
 /STRING 向下查找字符串
 ?STRING 向上查找字符串
 n 重复前一个查找
+```
+
+#### head tail
+```shell
+head -n 100 [filename] 前100行
+head -n -100 [filename] 除了后100行的所有内容
+```
+```shell
+tail -n 100 [filename] 后100行
+tail -n +100 [filename] 100行及之后的所有内容
+tail -f [filename] 数据实时显示到屏幕
 ```
