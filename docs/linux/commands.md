@@ -31,6 +31,7 @@ pageup 上一页
 ?STRING 向上查找字符串
 n 重复前一个查找
 ```
+> mac 的 pageup 和 pagedown 分别是`fn+上方向键`和`fn+下方向键`。
 
 #### head tail
 ```shell
