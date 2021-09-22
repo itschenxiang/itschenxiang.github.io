@@ -53,3 +53,26 @@ grep
 -i 忽略大小写
 -v 反选，表示返回不包含指定字符串的行
 ```
+
+## 解压缩文件
+#### zip
+压缩文件：
+```shell
+zip target.zip source_filename
+```
+压缩文件夹：
+```shell
+zip -r target.zip source_dirname
+```
+其他选项：
+```shell
+zip
+-q 不显示指令执行过程
+-v 显示指令执行过程或显示版本信息
+```
+对应解压缩命令：
+```shell
+unzip source.zip
+-q 不显示指令执行过程
+-v 显示指令执行过程或显示版本信息
+```
