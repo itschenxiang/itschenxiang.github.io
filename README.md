@@ -4,10 +4,13 @@
 # 主题
 ## [Spring编程常见错误](./docs/springsummary/README.md)
 ## [Linux常用命令(CentOS)](./docs/linux/commands.md)
-
+<!-- 
 ## 教程
 * [Spring Data JPA入门](./docs/tutorial/springdatajpa.md)
 * [Docker 教程](docker/tutorial.md)
 
 ## 大数据组件
-#### [hadoop](./docs/hadoop/hdfsbasic.md)
+#### [hadoop](./docs/hadoop/hdfsbasic.md) -->
+
+## 大数据入门
+#### [大数据笔记](./otherrepos/BigData-Notes/README.md)
