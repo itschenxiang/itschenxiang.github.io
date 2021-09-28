@@ -13,4 +13,4 @@
 #### [hadoop](./docs/hadoop/hdfsbasic.md) -->
 
 ## 大数据入门
-#### [大数据笔记](./otherrepos/BigData-Notes/README.md)
+<!-- #### [大数据笔记](./otherrepos/BigData-Notes/README.md) -->
