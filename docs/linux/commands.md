@@ -44,6 +44,15 @@ tail -n +100 [filename] 100行及之后的所有内容
 tail -f [filename] 数据实时显示到屏幕
 ```
 
+如何查看第x行？
+```shell
+head -n x <file_name> | tail -n 1
+```
+如何查看第x行前后y行？
+```shell
+head -n x+y <file_name> | tail -n 2*y
+```
+
 ## 管道
 #### grep
 ```shell
