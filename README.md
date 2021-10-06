@@ -1,5 +1,5 @@
 # Itschenxiang
-<img src="./imgs/dfca80e6dbdf0d9c591b0ebcb5d2f141.jpg" style="width:100px;float:right"/>
+<!-- <img src="./imgs/dfca80e6dbdf0d9c591b0ebcb5d2f141.jpg" style="width:100px;float:right"/> -->
 
 # 主题
 ## [Spring编程常见错误](./docs/springsummary/README.md)
@@ -13,4 +13,4 @@
 #### [hadoop](./docs/hadoop/hdfsbasic.md) -->
 
 ## 大数据入门
-<!-- #### [大数据笔记](./otherrepos/BigData-Notes/README.md) -->
+#### [大数据笔记](./bigdata-notes/README.md)
