@@ -19,3 +19,4 @@
 #### [maven 与 maven 插件](article/01.md)
 #### [Java 业务系统分层设计](article/02.md)
 #### [Git 飞行准则](article/03.md)
+#### [在非 Spring 上下文获取使用 Spring Bean](article/04.md)
