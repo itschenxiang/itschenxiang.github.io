@@ -21,3 +21,4 @@
 #### [Git 飞行准则](article/03.md)
 #### [Shell 飞行准则](article/05.md)
 #### [在非 Spring 上下文获取使用 Spring Bean](article/04.md)
+#### [Hive 作为 ETL 的工具 - 示例](article/06.md)
