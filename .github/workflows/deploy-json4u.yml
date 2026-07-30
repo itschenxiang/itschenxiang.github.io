@@ -55,9 +55,10 @@ jobs:
           rm -rf json4u
           mkdir -p json4u
           cp -r out/* json4u/
+          touch .nojekyll
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add json4u
+          git add json4u .nojekyll
           if git diff --staged --quiet; then
             echo "No changes"
             exit 0
