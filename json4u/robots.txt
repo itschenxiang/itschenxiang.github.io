@@ -1,4 +1,0 @@
-User-Agent: *
-Allow: /
-
-Sitemap: http://localhost.json4u.com:3000/sitemap.xml
