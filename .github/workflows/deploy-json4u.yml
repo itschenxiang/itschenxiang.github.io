@@ -10,6 +10,7 @@ on:
       - 'pnpm-lock.yaml'
       - 'src/**'
       - 'public/**'
+      - '.github/workflows/*.yml'
   workflow_dispatch:
 
 concurrency:
