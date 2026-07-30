@@ -2,9 +2,13 @@
 
 import { type Config, defaultConfig } from "@/lib/db/config";
 import { tryCatch } from "@/lib/utils";
-import { useCookies } from "next-client-cookies";
+
+function getCookie(name: string): string | undefined {
+  if (typeof document === "undefined") return undefined;
+  const match = document.cookie.match(new RegExp(`(?:^|; )${name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}=([^;]*)`));
+  return match ? decodeURIComponent(match[1]) : undefined;
+}
 
 export function useConfigFromCookies() {
-  const cookies = useCookies();
-  return tryCatch<Config>(() => JSON.parse(cookies.get("config")!)["state"], defaultConfig);
+  return tryCatch<Config>(() => JSON.parse(getCookie("config")!)["state"], defaultConfig);
 }

@@ -1,17 +1,21 @@
 "use client";
 
-import dynamic from "next/dynamic";
-import { Suspense } from "react";
+import { useEffect, useState } from "react";
 
-const CookiesProvider = dynamic(
-  () => import("next-client-cookies/server").then((mod) => mod.CookiesProvider),
-  { ssr: false }
-);
-
+/**
+ * A simple provider that reads the "config" cookie on the client side.
+ * This avoids depending on next-client-cookies/server which can't be
+ * dynamically imported in static exports.
+ */
 export function CookiesClientProvider({ children }: { children: React.ReactNode }) {
-  return (
-    <Suspense fallback={children}>
-      <CookiesProvider>{children}</CookiesProvider>
-    </Suspense>
-  );
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  // On first render (SSR), render children directly.
+  // After hydration, the client-side code can access document.cookie.
+  // This prevents hydration mismatch and avoids server-side cookie issues.
+  return <>{children}</>;
 }
